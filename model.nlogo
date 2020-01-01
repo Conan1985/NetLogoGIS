@@ -13,7 +13,7 @@ patches-own [
 
 to setup-map
   ;;  Load the dataset
-  set tx-counties gis:load-dataset "data/tx-counties.shp"
+  set tx-counties gis:load-dataset "data/PaCounty2019_07.shp"
   ;;  Set the world envelope
   gis:set-world-envelope (gis:envelope-of tx-counties)
 
@@ -48,7 +48,7 @@ to setup-map
   reset-ticks
 end
 
-to setup
+to clear
   clear-all
   reset-ticks
 end
@@ -114,7 +114,7 @@ BUTTON
 92
 86
 NIL
-setup
+clear
 NIL
 1
 T
@@ -162,14 +162,16 @@ NIL
 @#$#@#$#@
 ## WHAT IS IT?
 
-This model demonstrates the integration of GIS information with the NetLogo language. This specific model utilizes the polygons from a Texas shapefile as agents, rather than turtles. 
+This model demonstrates the integration of GIS information with the NetLogo language. This specific model utilizes the polygons from a Pennsylvania shapefile as agents, rather than turtles. 
+
+The counties are downloaded from https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=24
 
 ## HOW IT WORKS
 The underlying NetLogo patch coordinate system is not directly aware of the location of each polygon. To remedy this, the centroid of each polygon is found. The patch underlying the centroid location is then assigned all values of the polygon. By default, NetLogo initializes variables not assigned a value to the value of 0. Using this feature, it is possible to ask all patches with an ID greater than 0 to perform some task. 
 
 ## HOW TO USE IT
 
-Three buttons are placed in the interface tab. To use the model, first click the setup-map button to load the GIS information and draw the map. Clicking the go button runs the model. To completely reset the model space, select the setup button.
+Three buttons are placed in the interface tab. To use the model, first click the setup-map button to load the GIS information and draw the map. Clicking the clear button runs the model. To completely reset the model space, select the setup button.
 
 ## THINGS TO NOTICE
 
@@ -489,7 +491,7 @@ false
 Polygon -7500403 true true 270 75 225 30 30 225 75 270
 Polygon -7500403 true true 30 75 75 30 270 225 225 270
 @#$#@#$#@
-NetLogo 6.0.4
+NetLogo 6.1.1
 @#$#@#$#@
 @#$#@#$#@
 @#$#@#$#@
