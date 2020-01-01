@@ -1,9 +1,8 @@
-;;  Dr. Tina Johnson
-;;  Broday Walker
+;;  Youwei Lu
 
 extensions [ gis ]
 
-globals [ tx-counties ]
+globals [ pa-counties ]
 
 patches-own [
           random-n
@@ -13,13 +12,13 @@ patches-own [
 
 to setup-map
   ;;  Load the dataset
-  set tx-counties gis:load-dataset "data/PaCounty2019_07.shp"
+  set pa-counties gis:load-dataset "data/PaCounty2019_07.shp"
   ;;  Set the world envelope
-  gis:set-world-envelope (gis:envelope-of tx-counties)
+  gis:set-world-envelope (gis:envelope-of pa-counties)
 
   ;;  Loop through the patches and find centroid and set ID
   let i 1
-  foreach gis:feature-list-of tx-counties [ feature ->
+  foreach gis:feature-list-of pa-counties [ feature ->
    ask patches gis:intersecting feature [
       set centroid gis:location-of gis:centroid-of feature
        ask patch item 0 centroid item 1 centroid [
@@ -35,15 +34,15 @@ to setup-map
     ;;  Color the patches
     ifelse random-n >= 5
     [
-      gis:set-drawing-color red gis:fill item (ID - 1) gis:feature-list-of tx-counties 2.0
+      gis:set-drawing-color red gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
     [
-      gis:set-drawing-color blue gis:fill item (ID - 1) gis:feature-list-of tx-counties 2.0
+      gis:set-drawing-color blue gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
   ]
   ;;  Draw the outline of the counties in white
   gis:set-drawing-color white
-  gis:draw tx-counties 1
+  gis:draw pa-counties 1
 
   reset-ticks
 end
@@ -71,12 +70,12 @@ to color-change
     [
       gis:set-drawing-color red
       gis:fill item (ID - 1)
-      gis:feature-list-of tx-counties 2.0
+      gis:feature-list-of pa-counties 2.0
     ]
     [
       gis:set-drawing-color blue
       gis:fill item (ID - 1)
-      gis:feature-list-of tx-counties 2.0
+      gis:feature-list-of pa-counties 2.0
     ]
   ]
 end
