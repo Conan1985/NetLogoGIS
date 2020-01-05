@@ -52,8 +52,6 @@ to setup-map
       ]
       ID = 3 [
         set population 300
-        draw-color
-      ]
     )
 
   ]
@@ -68,9 +66,6 @@ to draw-color
   (ifelse
     population <= 100 [
       gis:set-drawing-color gray gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
-    ]
-    population <= 300 [
-      gis:set-drawing-color orange gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
     )
 end
