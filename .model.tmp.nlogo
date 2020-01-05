@@ -43,16 +43,78 @@ to setup-map
 
     (ifelse
       ID = 1 [
-
-       set population 100
+        ; Adams County
+       set population 101407
        draw-color
       ]
       ID = 2 [
-        set population 200
+        ; Allegheny County
+        set population 1223348
         draw-color
       ]
       ID = 3 [
-        set population 300
+        ; Armstrong County
+        set population 68941
+        draw-color
+      ]
+      ID = 4 [
+        ; Beaver County
+        set population 170539
+        draw-color
+      ]
+      ID = 5 [
+        ; Bedford County
+        set population 49762
+        draw-color
+      ]
+      ID = 6 [
+        ; Berks County
+        set population 411442
+        draw-color
+      ]
+      ID = 7 [
+        ; Blair County
+        set population 127089
+        draw-color
+      ]
+      ID = 8 [
+        ; Bradford County
+        set population 62622
+        draw-color
+      ]
+      ID = 9 [
+        ; Bucks County
+        set population 625249
+        draw-color
+      ]
+      ID = 10 [
+        ; Butler County
+        set population 183862
+        draw-color
+      ]
+      ID = 11 [
+        ; Cambria County
+        set population 143679
+        draw-color
+      ]
+      ID = 12 [
+        ; Cameron County
+        set population 5085
+        draw-color
+      ]
+      ID = 13 [
+        ; Carbon County
+        set population 65249
+        draw-color
+      ]
+      ID = 14 [
+        ; Centre County
+        set population 153990
+        draw-color
+      ]
+      ID = 15 [
+        ;  County
+        set population 153990
         draw-color
       ]
     )
@@ -67,7 +129,7 @@ end
 
 to draw-color
   (ifelse
-    population <= 100 [
+    population <= 10000 [
       gis:set-drawing-color gray gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
     population <= 300 [
