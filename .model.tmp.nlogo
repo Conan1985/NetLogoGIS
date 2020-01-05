@@ -47,7 +47,7 @@ to setup-map
       ID = 2 [
        gis:set-drawing-color red gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
       ]
-      ID = 3 [
+      ID = 64 [
        gis:set-drawing-color orange gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
       ]
     )
