@@ -43,15 +43,18 @@ to setup-map
 
     (ifelse
       ID = 1 [
-       set population 100
+        ; Adams County
+       set population 101407
        draw-color
       ]
       ID = 2 [
-        set population 200
+        ; Allegheny County
+        set population 1223348
         draw-color
       ]
       ID = 3 [
-        set population 300
+        ; Armstrong County
+        set population 68941
         draw-color
       ]
     )
@@ -148,16 +151,15 @@ This model demonstrates the integration of GIS information with the NetLogo lang
 
 The counties are downloaded from https://www.pasda.psu.edu/uci/DataSummary.aspx?dataset=24
 
+The population data is retrieved from 
+https://en.wikipedia.org/wiki/List_of_counties_in_Pennsylvania#cite_note-7
+
 ## HOW IT WORKS
 The underlying NetLogo patch coordinate system is not directly aware of the location of each polygon. To remedy this, the centroid of each polygon is found. The patch underlying the centroid location is then assigned all values of the polygon. By default, NetLogo initializes variables not assigned a value to the value of 0. Using this feature, it is possible to ask all patches with an ID greater than 0 to perform some task. 
 
 ## HOW TO USE IT
 
-Three buttons are placed in the interface tab. To use the model, first click the setup-map button to load the GIS information and draw the map. Clicking the clear button runs the model. To completely reset the model space, select the setup button.
-
-## THINGS TO NOTICE
-
-During each tick, the polygons will be assigned a random value and adjust their color accordingly.
+Two buttons are placed in the interface tab. To use the model, first click the setup-map button to load the GIS information and draw the map. Clicking the clear button runs the model.
 
 ## EXTENDING THE MODEL
 
