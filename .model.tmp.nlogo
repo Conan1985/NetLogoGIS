@@ -113,8 +113,263 @@ to setup-map
         draw-color
       ]
       ID = 15 [
-        ;  County
-        set population 153990
+        ; Chester County
+        set population 498886
+        draw-color
+      ]
+      ID = 16 [
+        ; Clarion County
+        set population 39988
+        draw-color
+      ]
+      ID = 17 [
+        ; Clearfield County
+        set population 81642
+        draw-color
+      ]
+      ID = 18 [
+        ; Clinton County
+        set population 39238
+        draw-color
+      ]
+      ID = 19 [
+        ; Columbia County
+        set population 67295
+        draw-color
+      ]
+      ID = 20 [
+        ; Crawford County
+        set population 88765
+        draw-color
+      ]
+      ID = 21 [
+        ; Cumberland County
+        set population 235406
+        draw-color
+      ]
+      ID = 22 [
+        ; Dauphin County
+        set population 268100
+        draw-color
+      ]
+      ID = 23 [
+        ; Delaware County
+        set population 558979
+        draw-color
+      ]
+      ID = 24 [
+        ; Elk County
+        set population 31946
+        draw-color
+      ]
+      ID = 25 [
+        ; Erie County
+        set population 280566
+        draw-color
+      ]
+      ID = 26 [
+        ; Fayette County
+        set population 136606
+        draw-color
+      ]
+      ID = 27 [
+        ; Forest County
+        set population 7716
+        draw-color
+      ]
+      ID = 28 [
+        ; Franklin County
+        set population 149618
+        draw-color
+      ]
+      ID = 29 [
+        ; Fulton County
+        set population 14845
+        draw-color
+      ]
+      ID = 30 [
+        ; Greene County
+        set population 38686
+        draw-color
+      ]
+      ID = 31 [
+        ; Huntingdon County
+        set population 45913
+        draw-color
+      ]
+      ID = 32 [
+        ; Indiana County
+        set population 88880
+        draw-color
+      ]
+      ID = 33 [
+        ; Jefferson County
+        set population 45200
+        draw-color
+      ]
+      ID = 34 [
+        ; Juniata County
+        set population 24636
+        draw-color
+      ]
+      ID = 35 [
+        ; Lackawanna County
+        set population 214437
+        draw-color
+      ]
+      ID = 36 [
+        ; Lancaster County
+        set population 519445
+        draw-color
+      ]
+      ID = 37 [
+        ; Lawrence County
+        set population 91108
+        draw-color
+      ]
+      ID = 38 [
+        ; Lebanon County
+        set population 133568
+        draw-color
+      ]
+      ID = 39 [
+        ; Lehigh County
+        set population 349497
+        draw-color
+      ]
+      ID = 40 [
+        ; Luzerne County
+        set population 320918
+        draw-color
+      ]
+      ID = 41 [
+        ; Lycoming County
+        set population 116111
+        draw-color
+      ]
+      ID = 42 [
+        ; McKean County
+        set population 43450
+        draw-color
+      ]
+      ID = 43 [
+        ; Mercer County
+        set population 116638
+        draw-color
+      ]
+      ID = 44 [
+        ; Mifflin County
+        set population 46682
+        draw-color
+      ]
+      ID = 45 [
+        ; Monroe County
+        set population 169842
+        draw-color
+      ]
+      ID = 46 [
+        ; Montgomery County
+        set population 799874
+        draw-color
+      ]
+      ID = 47 [
+        ; Montour County
+        set population 18267
+        draw-color
+      ]
+      ID = 48 [
+        ; Northampton County
+        set population 297735
+        draw-color
+      ]
+      ID = 49 [
+        ; Northumberland County
+        set population 94528
+        draw-color
+      ]
+      ID = 50 [
+        ; Perry County
+        set population 45969
+        draw-color
+      ]
+      ID = 51 [
+        ; Philadelphia County
+        set population 1526006
+        draw-color
+      ]
+      ID = 52 [
+        ; Pike County
+        set population 57369
+        draw-color
+      ]
+      ID = 53 [
+        ; Potter County
+        set population 17457
+        draw-color
+      ]
+      ID = 54 [
+        ; Schuylkill County
+        set population 148289
+        draw-color
+      ]
+      ID = 55 [
+        ; Snyder County
+        set population 39702
+        draw-color
+      ]
+      ID = 56 [
+        ; Somerset County
+        set population 77742
+        draw-color
+      ]
+      ID = 57 [
+        ; Sullivan County
+        set population 6428
+        draw-color
+      ]
+      ID = 58 [
+        ; Susquehanna County
+        set population 43356
+        draw-color
+      ]
+      ID = 59 [
+        ; Tioga County
+        set population 41981
+        draw-color
+      ]
+      ID = 60 [
+        ; Union County
+        set population 44947
+        draw-color
+      ]
+      ID = 61 [
+        ; Venango County
+        set population 54984
+        draw-color
+      ]
+      ID = 62 [
+        ; Warren County
+        set population 41815
+        draw-color
+      ]
+      ID = 63 [
+        ; Washington County
+        set population 207820
+        draw-color
+      ]
+      ID = 64 [
+        ; Wayne County
+        set population 52822
+        draw-color
+      ]
+      ID = 65 [
+        ; Westmoreland County
+        set population 365169
+        draw-color
+      ]
+      ID = 65 [
+        ; Westmoreland County
+        set population 365169
         draw-color
       ]
     )
