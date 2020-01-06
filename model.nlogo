@@ -477,6 +477,76 @@ NIL
 NIL
 1
 
+TEXTBOX
+50
+141
+200
+159
+Population Legend
+11
+0.0
+1
+
+TEXTBOX
+49
+162
+199
+180
+<=10k: gray
+11
+5.0
+1
+
+TEXTBOX
+49
+188
+199
+206
+10k - 50k: green
+11
+55.0
+1
+
+TEXTBOX
+50
+216
+200
+234
+50k - 100k: blue
+11
+105.0
+1
+
+TEXTBOX
+49
+246
+199
+264
+100k - 500k: orange
+11
+25.0
+1
+
+TEXTBOX
+50
+276
+200
+294
+500k - 1m: red
+11
+15.0
+1
+
+TEXTBOX
+51
+304
+201
+322
+> 1m: magenta
+11
+125.0
+1
+
 @#$#@#$#@
 ## WHAT IS IT?
 
