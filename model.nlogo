@@ -293,88 +293,88 @@ to setup-map
         draw-color
       ]
       ID = 51 [
-        ; Philadelphia County
-        set population 1526006
-        draw-color
-      ]
-      ID = 52 [
         ; Pike County
         set population 57369
         draw-color
       ]
-      ID = 53 [
+      ID = 52 [
         ; Potter County
         set population 17457
         draw-color
       ]
-      ID = 54 [
+      ID = 53 [
         ; Schuylkill County
         set population 148289
         draw-color
       ]
-      ID = 55 [
+      ID = 54 [
         ; Snyder County
         set population 39702
         draw-color
       ]
-      ID = 56 [
+      ID = 55 [
         ; Somerset County
         set population 77742
         draw-color
       ]
-      ID = 57 [
+      ID = 56 [
         ; Sullivan County
         set population 6428
         draw-color
       ]
-      ID = 58 [
+      ID = 57 [
         ; Susquehanna County
         set population 43356
         draw-color
       ]
-      ID = 59 [
+      ID = 58 [
         ; Tioga County
         set population 41981
         draw-color
       ]
-      ID = 60 [
+      ID = 59 [
         ; Union County
         set population 44947
         draw-color
       ]
-      ID = 61 [
+      ID = 60 [
         ; Venango County
         set population 54984
         draw-color
       ]
-      ID = 62 [
+      ID = 61 [
         ; Warren County
         set population 41815
         draw-color
       ]
-      ID = 63 [
+      ID = 62 [
         ; Washington County
         set population 207820
         draw-color
       ]
-      ID = 64 [
+      ID = 63 [
         ; Wayne County
         set population 52822
         draw-color
       ]
-      ID = 65 [
+      ID = 64 [
         ; Westmoreland County
         set population 365169
         draw-color
       ]
-      ID = 66 [
+      ID = 65 [
         ; Wyoming County
         set population 28276
         draw-color
       ]
-      ID = 67 [
+      ID = 66 [
         ; York County
         set population 434972
+        draw-color
+      ]
+      ID = 67 [
+        ; Philadelphia County
+        set population 1526006
         draw-color
       ]
     )
@@ -392,9 +392,22 @@ to draw-color
     population <= 10000 [
       gis:set-drawing-color gray gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
-    population <= 300 [
+    population <= 50000 [
+      gis:set-drawing-color green gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
+    ]
+    population <= 100000 [
+      gis:set-drawing-color blue gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
+    ]
+    population <= 500000 [
       gis:set-drawing-color orange gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
     ]
+    population <= 1000000 [
+      gis:set-drawing-color red gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
+    ]
+    [
+      gis:set-drawing-color magenta gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
+    ]
+
     )
 end
 
