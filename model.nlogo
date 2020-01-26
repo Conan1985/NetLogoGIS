@@ -12,12 +12,8 @@ patches-own [
 ]
 
 to setup-map
-  ;;  Load the dataset
   set pa-counties gis:load-dataset "data/PaCounty2019_07.shp"
-  ;;  Set the world envelope
   gis:set-world-envelope (gis:envelope-of pa-counties)
-
-  ;;  Loop through the patches and find centroid and set ID
   let i 1
   foreach gis:feature-list-of pa-counties [ feature ->
    ask patches gis:intersecting feature [
@@ -30,17 +26,6 @@ to setup-map
    ]
 
   ask patches with [ID > 0] [
-    ;;  Set initial random number
-;    set random-n random-float 10
-;    ;;  Color the patches
-;    ifelse random-n >= 5
-;    [
-;      gis:set-drawing-color red gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
-;    ]
-;    [
-;      gis:set-drawing-color blue gis:fill item (ID - 1) gis:feature-list-of pa-counties 2.0
-;    ]
-
     (ifelse
       ID = 1 [
         ; Adams County
